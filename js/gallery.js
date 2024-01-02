@@ -34,6 +34,8 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
+	document.getElementById('photo').src = mImages[mCurrentIndex].url;
+
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -46,6 +48,9 @@ var mCurrentIndex = 0;
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
 
+var xhttp = new XMLHttpRequest();
+
+
 // Array holding GalleryImage objects (see below).
 var mImages = [];
 
@@ -54,7 +59,7 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'insert_url_here_to_image_json';
+var mUrl = 'images.json';
 
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
@@ -63,6 +68,7 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 	return function(e) {
 		galleryImage.img = e.target;
 		mImages.push(galleryImage);
+
 	}
 }
 
@@ -81,16 +87,33 @@ window.addEventListener('load', function() {
 
 function GalleryImage() {
 	//implement me as an object to hold the following data about an image:
-	let location = location;
-	let description = description; 
-	let date = date;
-	let img = img.src="img/places australia";
+	let location;
+	let description; 
+	let date;
+	let url;
 }
 
-function fetchJSON(url, callback) {
-	mRequest.onreadystatechange = function() {
-		if (mRequest.readyState === 4 && mRequest.status === 200) {
-			
-		}
+function fetchJSON()
+{
+mRequest.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       mJson = JSON.parse(mRequest.responseText);
+	   iterateJSON();
+    }
+};
+mRequest.open("GET", mUrl, true);
+mRequest.send();
+};
+
+function iterateJSON()
+{
+	for(let i=0; i< mJson.images.length; i++)
+	{
+		mImages[i] = new GalleryImage();
+		mImages[i].location = mJson.images[i].imgLocation;
+		mImages[i].description = mJson.images[i].description;
+		mImages[i].date = mJson.images[i].date;
+		mImages[i].url = mJson.images[i].imgPath;
 	}
-}
+};
