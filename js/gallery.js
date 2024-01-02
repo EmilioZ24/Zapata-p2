@@ -81,8 +81,16 @@ window.addEventListener('load', function() {
 
 function GalleryImage() {
 	//implement me as an object to hold the following data about an image:
-	//1. location where photo was taken
-	//2. description of photo
-	//3. the date when the photo was taken
-	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+	let location = location;
+	let description = description; 
+	let date = date;
+	let img = img.src="img/places australia";
+}
+
+function fetchJSON(url, callback) {
+	mRequest.onreadystatechange = function() {
+		if (mRequest.readyState === 4 && mRequest.status === 200) {
+			
+		}
+	}
 }
