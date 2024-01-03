@@ -37,9 +37,17 @@ window.requestAnimFrame = (function(){
 	document.getElementsByClassName('location')[0].innerHTML = "Location: " + mImages[mCurrentIndex].location;
 	document.getElementsByClassName('description')[0].innerHTML = "Description: " + mImages[mCurrentIndex].description;
 	document.getElementsByClassName('date')[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
+
 	console.log('swap photo');
 
 	mCurrentIndex++;
+
+	if(
+		mCurrentIndex >= mJson.images.length
+	) {
+		mCurrentIndex = 0;
+	}
+
   }
   
   
