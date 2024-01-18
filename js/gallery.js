@@ -47,7 +47,7 @@ window.requestAnimFrame = (function(){
 	) {
 		mCurrentIndex = 0;
 	}
-
+if(mCurrentIndex<)
   }
   
   
@@ -79,8 +79,13 @@ window.requestAnimFrame = (function(){
   
   $(document).ready( function() {
   
+    $('#nextPhoto').position({
+        my: "right bottom",
+        at: "right bottom",
+        of:"#nav"
+    });
   // This initially hides the photos' metadata information
-  //$('.details').eq(0).hide();
+  $('.details').eq(0).hide();
   
   });
   

@@ -52,11 +52,26 @@ body {
 #prevPhoto {
 	height: 42px;
 	width: 42px;
+	top: 0;
+	right: 0;
+
 }
 
 #nextPhoto {
 	height: 42px;
 	width: 42px;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+#prevPhoto:hover {
+	opacity: 0.8;
+}
+
+#nextPhoto:hover {
+	opacity: 0.8;
 }
 
 .details p {
@@ -80,6 +95,7 @@ img.moreIndicator.rot90 {
 #gallery {
     width: 600px; /* Set a fixed width for your container */
     margin: 0 auto; /* Center the container */
+	border: 1px solid #ccc; /* Just for visual representation */
 }
 
 img {
