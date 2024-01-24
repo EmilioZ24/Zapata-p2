@@ -14,7 +14,46 @@ window.requestAnimFrame = (function(){
   // example code from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
   
   animate();
-  
+
+  $(document).ready(function(){
+    getAllUrlParams();
+    $(".moreIndicator").click(function() {
+      if ($(".moreIndicator").hasClass("rot90")){
+        $(".moreIndicator").removeClass("rot90")
+        $(".moreIndicator").addClass("rot270")
+        $("div.details").fadeToggle("fast", "linear")
+      } else {
+        $(".moreIndicator").removeClass("rot270")
+        $(".moreIndicator").addClass("rot90")
+        $("div.details").fadeToggle("fast", "linear")
+      };
+      
+    });
+  });
+
+	///Offset #nextPhoto
+	// $("#nextPhoto").addClass("rightSide");
+	$("#nextPhoto").position({
+		my: "right bottom",
+		at: "right bottom",
+		of: "#nav"
+	});
+
+
+
+	//Hover Handles to nextPhoto and prevPhoto
+	$("#nextPhoto").hover(function(){
+		$(this).css('opacity', '0.8');
+		}, function(){
+		$(this).css('opacity', '1');
+	  });
+	  
+	 $("#prevPhoto").hover(function(){
+		$(this).css('opacity', '0.8');
+		}, function(){
+		$(this).css('opacity', '1');
+	  });
+
   var mLastFrameTime = 0;
   var mWaitTime = 5000; //time in ms
   function animate() {
@@ -47,8 +86,11 @@ window.requestAnimFrame = (function(){
 	) {
 		mCurrentIndex = 0;
 	}
-if(mCurrentIndex<)
+if(mCurrentIndex<= ){
+
+
   }
+}
   
   
   // Counter for the mImages array
