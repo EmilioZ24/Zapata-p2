@@ -1,28 +1,30 @@
 {
     "images": [
         {
-            "imgPath": "http://placehold.it/518x389?text=index+0",
-            "imgLocation": "First image (index 0)",
-            "description": "This is the 1st image in the set",
-            "date": "01/01/2016"
+            "imgPath": "https://www.riu.com/blog/wp-content/uploads/2018/07/shutterstock_310904339.jpg",
+            "imgLocation": "Punta Cana, Dominican Republic",
+            "description": "Punta Cana a perfect beach to relax and take in the sun one of my personal favorite beaches",
+            "date": "7/24/2018"
         },
+
         {
-            "imgPath": "http://placehold.it/518x389?text=index+1",
-            "imgLocation": "Second image (index 1)",
-            "description": "This is the 2nd image in the set",
-            "date": "02/01/2016"
+            "imgPath": "https://playa-cms-assets.s3.amazonaws.com/styled/wyndham_cancun/things_to_do/wyndham-alltra-cancun-destination-blue-river-mexico.jpg/4183a15b01ba63c0e6bd7e18839ea901",
+            "imgLocation": "Cancun, Mexico",
+            "description": "Cancun is a popular resort city located on the northeast coast of the Yucatán Peninsula in Mexico. Known for its stunning white sand beaches and turquoise waters, Cancun is a major tourist destination. Beyond its beautiful coastline, the city offers vibrant nightlife, diverse dining options, and opportunities for water activities such as snorkeling and scuba diving. Visitors can also explore nearby archaeological sites, including the ancient Mayan ruins of Chichen Itza and Tulum. With its tropical climate and abundant attractions, Cancun attracts millions of tourists seeking a mix of relaxation and adventure.",
+            "date": "05/12/2023"
         },
+
         {
-            "imgPath": "http://placehold.it/518x389?text=index+2",
-            "imgLocation": "Third image (index 2)",
-            "description": "This is the 3rd image in the set",
-            "date": "03/01/2016"
+            "imgPath": "https://lp-cms-production.imgix.net/2023-06/iStock-1343645393.jpg?auto=format&w=1920&h=640&fit=crop&crop=faces,edges&q=75",
+            "imgLocation": "San Juan Teotihuacán, City in Mexico",
+            "description": "Teotihuacán is an ancient Mesoamerican city located in the Basin of Mexico, approximately 30 miles northeast of modern-day Mexico City. Known for its impressive and well-preserved archaeological ruins, Teotihuacán was one of the largest and most influential cities in the pre-Columbian Americas. The site is characterized by its monumental structures, including the Pyramid of the Sun and the Pyramid of the Moon, which are connected by the Avenue of the Dead. Teotihuacán reached its peak between the 1st and 7th centuries AD, and although much about its culture and inhabitants remains a mystery, it is considered a UNESCO World Heritage site and a significant archaeological and cultural landmark.",
+            "date": "06/08/2023"
         },
     {
-      "imgPath": "http://placehold.it/518x389?text=index+3",
-      "imgLocation": "Fourth image (index 3)",
-      "description": "This is the 4th image in the set",
-      "date": "04/01/2016"
+      "imgPath": "https://cdn.kiwicollection.com/media/property/PR000492/xl/000492-27-36%20Villa3.jpg?cb=1531955434",
+      "imgLocation": "Carretera La Romana - Higuey Hwy, La Romana 22000, Dominican Republic",
+      "description": "Casa de Campo is a luxurious resort located in La Romana, Dominican Republic. Sprawling across 7,000 acres, it offers a range of upscale amenities and activities. The resort features world-class golf courses, a marina, polo facilities, tennis courts, and a private beach. Accommodations include elegant villas and hotel rooms with stunning views. Casa de Campo is renowned for its exclusive atmosphere, catering to the discerning traveler seeking a blend of relaxation and recreation in a tropical paradise. who knows you might run into shaquile o'neil",
+      "date": "04/05/2021"
     }
   ]
 }
