@@ -174,31 +174,16 @@ window.requestAnimFrame = (function(){
   });
       
  //Click Handlers
- $("#nextPhoto").click(function(){
-  swapPhoto()
-  if (mCurrentIndex >=mJson.images.length){
-    mCurrentIndex = 0;
-    swapPhoto()
-    return;
+ $("#nextPhoto").click(function() {
+  swapPhoto();
+});
+
+$("#prevPhoto").click(function() {
+  mCurrentIndex -= 2;
+  if (mCurrentIndex < 0) {
+    mCurrentIndex = mJson.images.length - 1;
   }
-  });
-
-  $("#prevPhoto").click(function(){
-    
-    mCurrentIndex= mCurrentIndex-2;
-    if (mCurrentIndex > mJson.images.length){
-      mCurrentIndex = 0;
-      return;
-
-    } else if (mCurrentIndex < 0){
-      mCurrentIndex = 13;
-      console.log(mCurrentIndex);
-      return;
-      
-    }
-
-    swapPhoto();
-    
+  swapPhoto();
 });
 
 	//Hover Handles to nextPhoto and prevPhoto
